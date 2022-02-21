@@ -96,7 +96,7 @@ module.exports = {
     }),
     new EndWebpackPlugin(async () => {
       // 自定义域名
-      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'yangfupingresume.top');
+      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'https://taskl.github.io/resume');
 
       await publishGhPages();
 
